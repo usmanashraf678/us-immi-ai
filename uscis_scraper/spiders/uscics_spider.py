@@ -85,6 +85,6 @@ class USCISSpider(scrapy.Spider):
         return any(domain in url for domain in self.allowed_domains) and '/es/' not in url
     
     def normalize_filename(self, link_text):
-        # Parse the URL to extract the path and normalize it
+        # Parse the link text and remove special characters from it
         normalized_link_text = re.sub(r'[<>:"/\\|?*]', '-', link_text)
         return normalized_link_text

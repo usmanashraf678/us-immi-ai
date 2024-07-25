@@ -1,2 +1,3 @@
 output/
 venv/
+uscis_scraper/spiders/__pycache__/
